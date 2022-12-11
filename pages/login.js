@@ -52,7 +52,7 @@ const Login = () => {
       setState({
         ...state,
         buttonText: 'Login',
-        error: error.message,
+        error: error.response.data.error,
       });
     }
   };
